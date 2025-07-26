@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 // Laravel'in varsayılan kimlik doğrulama rotaları (kayıt, giriş, şifre sıfırlama vb.)
-Auth::routes();
+'Auth'::routes();
 
 // Anasayfa rotası
 Route::get('/home', [HomeController::class, 'index'])->name('home');
